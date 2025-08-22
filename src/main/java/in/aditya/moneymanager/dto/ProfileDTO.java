@@ -12,7 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class ProfileDTO {
-    private long id;
+
+    private Long id;
     private String fullName;
     private String email;
     private String password;
