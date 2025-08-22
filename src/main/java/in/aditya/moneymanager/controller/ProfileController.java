@@ -16,12 +16,6 @@ public class ProfileController {
 
     private final ProfileService profileService;
 
-    @GetMapping("/test-profile")
-    public String testProfile() {
-        ProfileEntity entity = new ProfileEntity();
-        return "Created: " + entity.toString();
-    }
-
     @PostMapping("/register")
     public ResponseEntity<ProfileDTO> registerProfile(@RequestBody ProfileDTO profileDTO){
         ProfileDTO registeredProfile = profileService.registerProfile(profileDTO);
