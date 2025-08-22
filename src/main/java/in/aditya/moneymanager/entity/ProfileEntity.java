@@ -10,13 +10,18 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
+
 @Entity
 @Table(name = "tbl_profiles")
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 public class ProfileEntity {
+
+
+    public ProfileEntity() {
+        System.out.println(">>> ProfileEntity loaded!");
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
