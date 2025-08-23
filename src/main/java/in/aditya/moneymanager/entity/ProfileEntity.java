@@ -18,16 +18,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class ProfileEntity {
-<<<<<<< HEAD
-
 
     public ProfileEntity() {
         System.out.println(">>> ProfileEntity loaded!");
     }
-
-=======
-    
->>>>>>> aba616217f4aa0521b7660b9ef6ab6499b2e2b9a
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
