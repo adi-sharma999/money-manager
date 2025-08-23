@@ -2,6 +2,7 @@ package in.aditya.moneymanager.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,12 +18,16 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class ProfileEntity {
+<<<<<<< HEAD
 
 
     public ProfileEntity() {
         System.out.println(">>> ProfileEntity loaded!");
     }
 
+=======
+    
+>>>>>>> aba616217f4aa0521b7660b9ef6ab6499b2e2b9a
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
