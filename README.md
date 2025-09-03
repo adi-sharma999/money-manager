@@ -1,2 +1,2 @@
 # money-manager
-Finance management Java and MySQL
+Finance management Java and MySQL.
